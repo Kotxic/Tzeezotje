@@ -78,6 +78,7 @@ p{
   }
   
   .input {
+    z-index: 15;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -88,10 +89,10 @@ p{
     display: none;
   }
   .input__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   
+    position:absolute;
+    top: 30vh;
+    left: 30vw;
     background: #fff;
     border-radius: 10px;
     max-width: 588px;
@@ -110,6 +111,31 @@ p{
     margin-top: 20px;
     border-radius: 20px;
 }
+@media(max-width:1000px){
+    .input__container {
+        top: 30vh;
+        left: 25vw;
+      }
+
+}
+@media(max-width:900px){
+    .input__container {
+        top: 30vh;
+        left: 15vw;
+      }
+ }
+ @media(max-width:700px){
+    .input__container {
+        max-width: 400px;
+        left: 5vw;
+      }
+ }
+ @media(max-width:400px){
+    .input__container {
+        max-width: 350px;
+        left: 1vw;
+      }
+ }
   
 
 /*preview*/
@@ -151,6 +177,15 @@ p{
 .preview__botton:hover{
     background-color: #c18b20;
 }
+.preview__media{
+    display: flex;
+}
+.media__content{
+    display: flex;  
+}
+.media__content:not(:last-child){
+    margin-right: 25px;
+}
 .media__icon{
     font-size: 16px;
     line-height: 24px;
@@ -168,12 +203,29 @@ p{
 }
 
 @media (max-width:767px){
+    .preview{
+        height: 600px;
+    }
+    .preview__hiading1{
+        font-size: 32px;
+        line-height: 44px;
+    }
     .button{
         padding: 19px 32px;
     }
     .media__icon{
         padding: 12px;
     }
+    .media__content{
+        flex-direction: column;
+    }
+    .media__icon{
+        margin-right: 25px;
+    }
+    .media__icon:not(:first-child){
+        margin-top: 10px;
+    }
+    
 }
 
 
@@ -230,6 +282,12 @@ p{
     z-index: 5;
 }
 @media(max-width: 1170px){
+    .timetable__item{
+        margin-left: 10px;
+    }
+    .timetable__hiading4{
+        text-align: center;
+    }
     .timetable__picture{
         display: none;
     }

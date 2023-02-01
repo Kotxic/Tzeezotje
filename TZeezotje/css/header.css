@@ -68,6 +68,14 @@
 .tel__link{
     display: none;
 }
+@media (max-width: 900px){
+    .header__logo{
+        align-items:center ;
+        background-image: url('/img/NAAM\ 1\ \(1\).png');
+        background-repeat: no-repeat;
+        width: 150px;
+    }
+}
 @media (min-width: 767px){
     .menu__list{
         display: flex;
