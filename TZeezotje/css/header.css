@@ -33,7 +33,7 @@
     display: none;
 }
 .menu__contacts__item{
-    list-style-image: url(img/Vector.png);
+    list-style-image: url('img/Vector.png');
 }
 .menu__contact__link{
     align-items: center;
